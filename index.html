@@ -17,23 +17,143 @@
   <body>
     <nav>
       <div class="nav-wrapper">
-        <div class="logo"></div>
+        <span>The planets</span>
         <button class="burger-btn">
-          <div class="burger-btn-bars"></div>
+          <div class="burger-bars"></div>
         </button>
       </div>
     </nav>
     <main>
-      <div class="mobile-overview-btn">
-        <button>Overview</button>
-        <button>Internal Structure</button>
-        <button>Surface Geology</button>
+      <div class="nav-mobile">
+        <ul>
+          <li>
+            <a href="/starter-code/index.html"
+              ><span class="dot" style="background-color: #def4fc"></span>
+              <span>Mercury</span>
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/starter-code/venus.html">
+              <span class="dot" style="background-color: #f7cc7f"></span>
+              Venus
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/starter-code/earth.html"
+              ><span class="dot" style="background-color: #545bfe"></span>
+              Earth
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/starter-code/mars.html"
+              ><span class="dot" style="background-color: #ff6a45"></span>
+              Mars
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/starter-code/jupiter.html"
+              ><span class="dot" style="background-color: #ecad7a"></span>
+              Jupiter
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/starter-code/saturn.html"
+              ><span class="dot" style="background-color: #fccb6b"></span>
+              Saturn
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/starter-code/uranus.html">
+              <span class="dot" style="background-color: #65f0d5"></span>
+              Uranus
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/starter-code/neptune.html"
+              ><span class="dot" style="background-color: #497efa"></span>
+              Neptune
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-overview-section">
+        <ul>
+          <li><a>Overview</a></li>
+          <li><a>Structure</a></li>
+          <li><a>Geology</a></li>
+        </ul>
       </div>
       <div class="container-wrapper">
-        <div class="planet"></div>
+        <div class="planet">
+          <img src="/starter-code/assets/planet-mercury.svg" alt="" />
+        </div>
         <div class="planet-text-wrapper">
           <div class="planet-text">
-            <div class="overview">
+            <div class="overview" id="overview">
               <h1>Mercury</h1>
               <p>
                 Mercury is the smallest planet in the Solar System and the
@@ -65,7 +185,7 @@
                 >
               </span>
             </div>
-            <div class="surface_geology" style="display: none">
+            <div class="surface-geology" style="display: none">
               <h1>Mercury</h1>
               <p>
                 Mercury's surface is similar in appearance to that of the Moon,
@@ -82,7 +202,7 @@
               </span>
             </div>
           </div>
-          <div class="overview-btn">
+          <div class="overview-btn" style="display: none">
             <button>01 Overview</button>
             <button>02 Internal Structure</button>
             <button>03 Surface Geology</button>
@@ -90,11 +210,14 @@
         </div>
       </div>
       <div class="stats">
-        <div>Rotation Time 58.6 Days</div>
-        <div>Revolution Time 87.97 Days</div>
-        <div>Radius 2,439.7 KM</div>
-        <div>Average Temp. 430°c</div>
+        <ul>
+          <li>Rotation Time <span>58.6 Days</span></li>
+          <li>Revolution Time <span>87.97 Days</span></li>
+          <li>Radius <span>2,439.7 KM</span></li>
+          <li>Average Temp. <span>430°C</span></li>
+        </ul>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
