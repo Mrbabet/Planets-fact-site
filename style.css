@@ -353,7 +353,7 @@ main {
     align-items: center;
     border: 1px solid white;
     height: 50px;
-    width: 360px;
+    min-width: 360px;
     padding-inline: 1.5rem;
     gap: 1rem;
     font-weight: bold;
@@ -368,11 +368,41 @@ main {
     margin-inline: 1.5rem;
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
   }
   .planet-text-wrapper .planet-text {
     min-width: 350px;
     max-width: 450px;
+  }
+  .planet-text-wrapper .planet-text .overview,
+.planet-text-wrapper .planet-text .internal-source,
+.planet-text-wrapper .planet-text .surface-geology {
+    color: white;
     text-align: left;
+  }
+  .planet-text-wrapper .planet-text .overview h1,
+.planet-text-wrapper .planet-text .internal-source h1,
+.planet-text-wrapper .planet-text .surface-geology h1 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+  }
+  .planet-text-wrapper .planet-text .overview p,
+.planet-text-wrapper .planet-text .internal-source p,
+.planet-text-wrapper .planet-text .surface-geology p {
+    font-size: 12px;
+    line-height: 200%;
+    margin-bottom: 2rem;
+  }
+  .planet-text-wrapper .planet-text .overview span,
+.planet-text-wrapper .planet-text .internal-source span,
+.planet-text-wrapper .planet-text .surface-geology span {
+    color: #979797;
+  }
+  .planet-text-wrapper .planet-text .overview span a,
+.planet-text-wrapper .planet-text .internal-source span a,
+.planet-text-wrapper .planet-text .surface-geology span a {
+    color: #979797;
+    font-weight: bold;
   }
   .stats {
     margin-inline: 1.5rem;
@@ -403,7 +433,7 @@ main {
     color: white;
   }
 }
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 768px) and (min-width: 1100px) {
   .nav-wrapper {
     display: flex;
     flex-direction: row;
@@ -441,6 +471,36 @@ main {
   .planet-text-wrapper .planet-text {
     width: 350px;
     text-align: left;
+  }
+  .planet-text-wrapper .planet-text .overview,
+.planet-text-wrapper .planet-text .internal-source,
+.planet-text-wrapper .planet-text .surface-geology {
+    color: white;
+    text-align: left;
+  }
+  .planet-text-wrapper .planet-text .overview h1,
+.planet-text-wrapper .planet-text .internal-source h1,
+.planet-text-wrapper .planet-text .surface-geology h1 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+  }
+  .planet-text-wrapper .planet-text .overview p,
+.planet-text-wrapper .planet-text .internal-source p,
+.planet-text-wrapper .planet-text .surface-geology p {
+    font-size: 12px;
+    line-height: 200%;
+    margin-bottom: 2rem;
+  }
+  .planet-text-wrapper .planet-text .overview span,
+.planet-text-wrapper .planet-text .internal-source span,
+.planet-text-wrapper .planet-text .surface-geology span {
+    color: #979797;
+  }
+  .planet-text-wrapper .planet-text .overview span a,
+.planet-text-wrapper .planet-text .internal-source span a,
+.planet-text-wrapper .planet-text .surface-geology span a {
+    color: #979797;
+    font-weight: bold;
   }
   .stats {
     margin-inline: 1.5rem;
