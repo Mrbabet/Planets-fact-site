@@ -78,6 +78,7 @@ body.active {
 
 .nav-wrapper {
   display: flex;
+  flex-direction: row;
   padding: 1rem 1.5rem;
   color: white;
   justify-content: space-between;
@@ -135,6 +136,10 @@ body.active {
   display: none;
 }
 
+.nav-desktop {
+  display: none;
+}
+
 .nav-mobile.active {
   display: block;
   position: absolute;
@@ -176,6 +181,10 @@ body.active {
 
 main {
   margin-bottom: 3.5rem;
+}
+
+.desktop-overview-section {
+  display: none;
 }
 
 .mobile-overview-section {
@@ -273,4 +282,192 @@ main {
 .stats li span {
   font-size: 20px;
   color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+  .nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0;
+  }
+  .nav-wrapper span {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  .mobile-overview-section {
+    display: none;
+  }
+  .nav-desktop {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    border-bottom: 1px solid #979797;
+  }
+  .nav-desktop ul {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: #979797;
+    gap: 2rem;
+    padding: 0;
+    padding-inline: 51px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+  .nav-desktop ul li {
+    padding-block: 1.5rem;
+  }
+  .nav-desktop ul li:hover {
+    color: white;
+    border-bottom: 4px solid #419ebb;
+  }
+  .planet {
+    width: 184px;
+    margin: 5rem auto;
+  }
+  .desktop-overview-section {
+    display: flex;
+  }
+  .desktop-overview-section ul {
+    padding: 0;
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .desktop-overview-section ul li {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    height: 50px;
+    width: 360px;
+    padding-inline: 1.5rem;
+    gap: 1rem;
+    font-weight: bold;
+  }
+  .desktop-overview-section ul li span {
+    color: #979797;
+  }
+  .desktop-overview-section ul li:active {
+    background-color: #419ebb;
+  }
+  .planet-text-wrapper {
+    margin-inline: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .planet-text-wrapper .planet-text {
+    min-width: 350px;
+    max-width: 450px;
+    text-align: left;
+  }
+  .stats {
+    margin-inline: 1.5rem;
+    color: white;
+  }
+  .stats ul {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(168px, 1fr));
+    grid-template-rows: 88px;
+    gap: 0.5rem;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0;
+  }
+  .stats li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    font-size: 8px;
+    letter-spacing: 0.75px;
+    color: #979797;
+    padding: 1rem 1.5rem;
+    border: 1px solid #979797;
+  }
+  .stats li span {
+    font-size: 20px;
+    color: white;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 3rem;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #979797;
+  }
+  .nav-wrapper span {
+    text-transform: uppercase;
+    font-size: 20px;
+    width: 200px;
+  }
+  .nav-desktop {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    justify-content: center;
+    border-bottom: 0;
+  }
+  .planet {
+    width: 290px;
+  }
+  .container-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-block: 5rem;
+  }
+  .planet-text-wrapper {
+    margin-inline: 7rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .planet-text-wrapper .planet-text {
+    width: 350px;
+    text-align: left;
+  }
+  .stats {
+    margin-inline: 1.5rem;
+    color: white;
+  }
+  .stats ul {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(255px, 1fr));
+    grid-template-rows: 128px;
+    gap: 0.5rem;
+    list-style: none;
+    text-transform: uppercase;
+    padding: 0;
+  }
+  .stats li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    font-size: 8px;
+    letter-spacing: 0.75px;
+    color: #979797;
+    padding: 1rem 1.5rem;
+    border: 1px solid #979797;
+  }
+  .stats li span {
+    font-size: 20px;
+    color: white;
+  }
 }/*# sourceMappingURL=style.css.map */
