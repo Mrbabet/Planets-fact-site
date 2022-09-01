@@ -87,7 +87,10 @@ body.active {
 }
 .nav-wrapper span {
   text-transform: uppercase;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -1.05px;
 }
 .nav-wrapper .burger-btn {
   width: 30px;
@@ -157,6 +160,12 @@ body.active {
   padding: 0;
   margin-block: 6rem;
 }
+.nav-mobile.active ul li {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1.365px;
+}
 .nav-mobile.active ul li a {
   display: flex;
   align-items: center;
@@ -166,6 +175,7 @@ body.active {
   border-bottom: 1px solid #979797;
   text-decoration: none;
   color: #979797;
+  font-style: normal;
 }
 .nav-mobile.active ul li a:hover {
   color: white;
@@ -177,10 +187,6 @@ body.active {
 }
 .nav-mobile.active ul li svg {
   width: 100%;
-}
-
-main {
-  margin-bottom: 3.5rem;
 }
 
 .desktop-overview-section {
@@ -203,6 +209,7 @@ main {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 9px;
+  line-height: 10px;
   letter-spacing: 2px;
 }
 .mobile-overview-section ul li {
@@ -235,7 +242,9 @@ main {
 .planet-text-wrapper .planet-text .overview h1,
 .planet-text-wrapper .planet-text .internal-source h1,
 .planet-text-wrapper .planet-text .surface-geology h1 {
+  font-weight: 400;
   font-size: 40px;
+  line-height: 52px;
   margin-bottom: 1rem;
 }
 .planet-text-wrapper .planet-text .overview p,
@@ -249,6 +258,9 @@ main {
 .planet-text-wrapper .planet-text .internal-source span,
 .planet-text-wrapper .planet-text .surface-geology span {
   color: #979797;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
 }
 .planet-text-wrapper .planet-text .overview span a,
 .planet-text-wrapper .planet-text .internal-source span a,
@@ -273,14 +285,20 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 700;
   font-size: 8px;
+  line-height: 16px;
   letter-spacing: 0.75px;
   color: #979797;
   padding: 1rem 1.5rem;
   border: 1px solid #979797;
 }
 .stats li span {
+  font-weight: 400;
   font-size: 20px;
+  line-height: 26px;
+  text-align: right;
+  letter-spacing: -0.75px;
   color: white;
 }
 
@@ -299,7 +317,6 @@ main {
   }
   .nav-wrapper span {
     text-transform: uppercase;
-    font-size: 20px;
   }
   .mobile-overview-section {
     display: none;
@@ -322,8 +339,9 @@ main {
     padding-inline: 51px;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 9px;
-    letter-spacing: 2px;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 1px;
   }
   .nav-desktop ul li {
     padding-block: 1.5rem;
@@ -347,6 +365,10 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    font-weight: 700;
+    font-size: 9px;
+    line-height: 25px;
+    letter-spacing: 2px;
   }
   .desktop-overview-section ul li {
     display: flex;
@@ -383,20 +405,27 @@ main {
   .planet-text-wrapper .planet-text .overview h1,
 .planet-text-wrapper .planet-text .internal-source h1,
 .planet-text-wrapper .planet-text .surface-geology h1 {
-    font-size: 40px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 62px;
+    text-transform: uppercase;
     margin-bottom: 1rem;
   }
   .planet-text-wrapper .planet-text .overview p,
 .planet-text-wrapper .planet-text .internal-source p,
 .planet-text-wrapper .planet-text .surface-geology p {
+    font-weight: 400;
     font-size: 12px;
-    line-height: 200%;
+    line-height: 25px;
     margin-bottom: 2rem;
   }
   .planet-text-wrapper .planet-text .overview span,
 .planet-text-wrapper .planet-text .internal-source span,
 .planet-text-wrapper .planet-text .surface-geology span {
     color: #979797;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 22px;
   }
   .planet-text-wrapper .planet-text .overview span a,
 .planet-text-wrapper .planet-text .internal-source span a,
@@ -416,6 +445,10 @@ main {
     list-style: none;
     text-transform: uppercase;
     padding: 0;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 16px;
+    letter-spacing: 0.75px;
   }
   .stats li {
     display: flex;
@@ -429,7 +462,10 @@ main {
     border: 1px solid #979797;
   }
   .stats li span {
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: -0.9px;
     color: white;
   }
 }
@@ -445,7 +481,6 @@ main {
   }
   .nav-wrapper span {
     text-transform: uppercase;
-    font-size: 20px;
     width: 200px;
   }
   .nav-desktop {
@@ -481,19 +516,25 @@ main {
   .planet-text-wrapper .planet-text .overview h1,
 .planet-text-wrapper .planet-text .internal-source h1,
 .planet-text-wrapper .planet-text .surface-geology h1 {
-    font-size: 40px;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 104px;
     margin-bottom: 1rem;
   }
   .planet-text-wrapper .planet-text .overview p,
 .planet-text-wrapper .planet-text .internal-source p,
 .planet-text-wrapper .planet-text .surface-geology p {
-    font-size: 12px;
-    line-height: 200%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
     margin-bottom: 2rem;
   }
   .planet-text-wrapper .planet-text .overview span,
 .planet-text-wrapper .planet-text .internal-source span,
 .planet-text-wrapper .planet-text .surface-geology span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
     color: #979797;
   }
   .planet-text-wrapper .planet-text .overview span a,
@@ -501,6 +542,38 @@ main {
 .planet-text-wrapper .planet-text .surface-geology span a {
     color: #979797;
     font-weight: bold;
+  }
+  .desktop-overview-section {
+    display: flex;
+  }
+  .desktop-overview-section ul {
+    padding: 0;
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 2.6px;
+  }
+  .desktop-overview-section ul li {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    height: 50px;
+    min-width: 360px;
+    padding-inline: 1.5rem;
+    gap: 1rem;
+    font-weight: bold;
+  }
+  .desktop-overview-section ul li span {
+    color: #979797;
+  }
+  .desktop-overview-section ul li:active {
+    background-color: #419ebb;
   }
   .stats {
     margin-inline: 1.5rem;
@@ -514,6 +587,10 @@ main {
     list-style: none;
     text-transform: uppercase;
     padding: 0;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 1px;
   }
   .stats li {
     display: flex;
@@ -527,7 +604,10 @@ main {
     border: 1px solid #979797;
   }
   .stats li span {
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: -1.5px;
     color: white;
   }
 }/*# sourceMappingURL=style.css.map */
