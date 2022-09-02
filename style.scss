@@ -231,7 +231,7 @@ body.active {
 
   .planet-text {
     .overview,
-    .internal-source,
+    .internal-structure,
     .surface-geology {
       color: white;
       text-align: center;
@@ -257,6 +257,14 @@ body.active {
         }
       }
     }
+  }
+  .internal-structure,
+  .surface-geology {
+    display: none;
+  }
+  .internal-structure.active,
+  .surface-geology.active {
+    display: block;
   }
 }
 .stats {
@@ -386,7 +394,7 @@ body.active {
       min-width: 350px;
       max-width: 450px;
       .overview,
-      .internal-source,
+      .internal-structure,
       .surface-geology {
         color: white;
         text-align: left;
@@ -418,6 +426,7 @@ body.active {
       }
     }
   }
+
   .stats {
     margin-inline: 1.5rem;
     color: white;
