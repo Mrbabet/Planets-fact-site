@@ -1,63 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Planets fact site</title>
-</head>
-<body>
-  Venus
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  <!-- Overview Content Start -->
-
-  Venus is the second planet from the Sun. It is named after the 
-  Roman goddess of love and beauty. As the brightest natural object 
-  in Earth's night sky after the Moon, Venus can cast shadows and 
-  can be, on rare occasions, visible to the naked eye in broad daylight.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus -->
-
-  <!-- Overview Content End -->
-
-  <!-- Internal Structure Content Start -->
-
-  The similarity in size and density between Venus and Earth suggests 
-  they share a similar internal structure: a core, mantle, and crust. 
-  Like that of Earth, Venusian core is most likely at least partially 
-  liquid because the two planets have been cooling at about the same rate.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus#Internal_structure -->
-
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  Much of the Venusian surface appears to have been shaped by volcanic activity. 
-  Venus has several times as many volcanoes as Earth, and it has 167 large 
-  volcanoes that are over 100 km (60 mi) across. The only volcanic complex 
-  of this size on Earth is the Big Island of Hawaii.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Venus#Surface_geology -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  243 Days
-
-  Revolution Time
-  224.7 Days
-
-  Radius
-  6,051.8 KM
-
-  Average Temp.
-  471°c
-</body>
+    <title>Frontend Mentor | Planets fact site</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <span>The planets</span>
+        <div class="nav-desktop">
+          <ul>
+            <li>Mercury</li>
+            <li>Venus</li>
+            <li>Earth</li>
+            <li>Mars</li>
+            <li>Jupiter</li>
+            <li>Saturn</li>
+            <li>Uranus</li>
+            <li>Neptune</li>
+          </ul>
+        </div>
+        <button class="burger-btn">
+          <div class="burger-bars"></div>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <div class="nav-mobile">
+        <ul>
+          <li>
+            <a href="/starter-code/index.html"
+              ><span class="dot" style="background-color: #def4fc"></span>
+              <span>Mercury</span>
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/starter-code/venus.html">
+              <span class="dot" style="background-color: #f7cc7f"></span>
+              Venus
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/starter-code/earth.html"
+              ><span class="dot" style="background-color: #545bfe"></span>
+              Earth
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/starter-code/mars.html"
+              ><span class="dot" style="background-color: #ff6a45"></span>
+              Mars
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/starter-code/jupiter.html"
+              ><span class="dot" style="background-color: #ecad7a"></span>
+              Jupiter
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/starter-code/saturn.html"
+              ><span class="dot" style="background-color: #fccb6b"></span>
+              Saturn
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/starter-code/uranus.html">
+              <span class="dot" style="background-color: #65f0d5"></span>
+              Uranus
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/starter-code/neptune.html"
+              ><span class="dot" style="background-color: #497efa"></span>
+              Neptune
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-overview-section">
+        <button class="overview-btn"><a>Overview</a></button>
+        <button class="structure-btn"><a>Structure</a></button>
+        <button class="geology-btn"><a>Geology</a></button>
+      </div>
+      <div class="container-wrapper">
+        <div class="planet">
+          <img src="/assets/planet-mercury.svg" alt="" />
+        </div>
+        <div class="planet-text-wrapper">
+          <div class="planet-text">
+            <div class="overview" id="overview">
+              <h1>Venus</h1>
+              <p>
+                Venus is the second planet from the Sun. It is named after the
+                Roman goddess of love and beauty. As the brightest natural
+                object in Earth's night sky after the Moon, Venus can cast
+                shadows and can be, on rare occasions, visible to the naked eye
+                in broad daylight.
+              </p>
+              <span
+                >Source:
+                <a href="https://en.wikipedia.org/wiki/Venus">Wikipedia</a>
+              </span>
+            </div>
+            <div class="internal-structure">
+              <h1>Venus</h1>
+              <p>
+                The similarity in size and density between Venus and Earth
+                suggests they share a similar internal structure: a core,
+                mantle, and crust. Like that of Earth, Venusian core is most
+                likely at least partially liquid because the two planets have
+                been cooling at about the same rate
+              </p>
+              <span
+                >Source:
+                <a href="https://en.wikipedia.org/wiki/Venus">Wikipedia</a>
+              </span>
+            </div>
+            <div class="surface-geology">
+              <h1>Venus</h1>
+              <p>
+                Much of the Venusian surface appears to have been shaped by
+                volcanic activity. Venus has several times as many volcanoes as
+                Earth, and it has 167 large volcanoes that are over 100 km (60
+                mi) across. The only volcanic complex of this size on Earth is
+                the Big Island of Hawaii. Source : Wikipedia
+              </p>
+              <span
+                >Source:
+                <a href="https://en.wikipedia.org/wiki/Venus">Wikipedia</a>
+              </span>
+            </div>
+          </div>
+          <div class="desktop-overview-section">
+            <button class="overview-btn-desktop">
+              <span>01 </span>Overview
+            </button>
+            <button class="structure-btn-desktop">
+              <span>02 </span>Internal Structure
+            </button>
+            <button class="geology-btn-desktop">
+              <span>03 </span>Surface Geology
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="stats">
+        <ul>
+          <li>Rotation Time <span>243 Days</span></li>
+          <li>Revolution Time <span>224.7 Days</span></li>
+          <li>Radius <span>6,051.8 KM</span></li>
+          <li>Average Temp. <span>471°c</span></li>
+        </ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>

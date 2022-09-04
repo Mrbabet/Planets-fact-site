@@ -1,61 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Planets fact site</title>
-</head>
-<body>
-  Neptune
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  <!-- Overview Content Start -->
-
-  Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar 
-  System, it is the fourth-largest planet by diameter, the third-most-massive planet, 
-  and the densest giant planet. It is 17 times the mass of Earth, more massive than 
-  its near-twin Uranus.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune -->
-
-  <!-- Overview Content End -->
-
-  <!-- Internal Structure Content Start -->
-
-  Neptune's internal structure resembles that of Uranus. Its atmosphere forms about 5% 
-  to 10% of its mass and extends perhaps 10% to 20% of the way towards the core. 
-  Increasing concentrations of methane, ammonia and water are found in the lower regions.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune#Internal_structure -->
-
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also 
-  present. Prominent absorption bands of methane exist at wavelengths above 600 nm, in 
-  the red and infrared portion of the spectrum.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Neptune#Atmosphere -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  16.08 Hours
-
-  Revolution Time
-  164.79 Years
-
-  Radius
-  24,622 KM
-
-  Average Temp.
-  -201°c
-</body>
+    <title>Frontend Mentor | Planets fact site</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <span>The planets</span>
+        <div class="nav-desktop">
+          <ul>
+            <li>Mercury</li>
+            <li>Venus</li>
+            <li>Earth</li>
+            <li>Mars</li>
+            <li>Jupiter</li>
+            <li>Saturn</li>
+            <li>Uranus</li>
+            <li>Neptune</li>
+          </ul>
+        </div>
+        <button class="burger-btn">
+          <div class="burger-bars"></div>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <div class="nav-mobile">
+        <ul>
+          <li>
+            <a href="/index.html"
+              ><span class="dot" style="background-color: #def4fc"></span>
+              <span>Mercury</span>
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/venus.html">
+              <span class="dot" style="background-color: #f7cc7f"></span>
+              Venus
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/earth.html"
+              ><span class="dot" style="background-color: #545bfe"></span>
+              Earth
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/mars.html"
+              ><span class="dot" style="background-color: #ff6a45"></span>
+              Mars
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/jupiter.html"
+              ><span class="dot" style="background-color: #ecad7a"></span>
+              Jupiter
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/saturn.html"
+              ><span class="dot" style="background-color: #fccb6b"></span>
+              Saturn
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/uranus.html">
+              <span class="dot" style="background-color: #65f0d5"></span>
+              Uranus
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/neptune.html"
+              ><span class="dot" style="background-color: #497efa"></span>
+              Neptune
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-overview-section">
+        <button class="overview-btn"><a>Overview</a></button>
+        <button class="structure-btn"><a>Structure</a></button>
+        <button class="geology-btn"><a>Geology</a></button>
+      </div>
+      <div class="container-wrapper">
+        <div class="planet">
+          <img src="/assets/planet-neptune.svg" alt="" />
+        </div>
+        <div class="planet-text-wrapper">
+          <div class="planet-text">
+            <div class="overview" id="overview">
+              <h1>Neptune</h1>
+              <p>
+                Neptune is the eighth and farthest-known Solar planet from the
+                Sun. In the Solar System, it is the fourth-largest planet by
+                diameter, the third-most-massive planet, and the densest giant
+                planet. It is 17 times the mass of Earth, more massive than its
+                near-twin Uranus.
+              </p>
+              <span
+                >Source:
+                <a href="https://en.wikipedia.org/wiki/Neptune">Wikipedia</a>
+              </span>
+            </div>
+            <div class="internal-structure">
+              <h1>Neptune</h1>
+              <p>
+                Neptune's internal structure resembles that of Uranus. Its
+                atmosphere forms about 5% to 10% of its mass and extends perhaps
+                10% to 20% of the way towards the core. Increasing
+                concentrations of methane, ammonia and water are found in the
+                lower regions.
+              </p>
+              <span
+                >Source:
+                <a href="https://en.wikipedia.org/wiki/Neptune">Wikipedia</a>
+              </span>
+            </div>
+            <div class="surface-geology">
+              <h1>Neptune</h1>
+              <p>
+                Neptune's atmosphere is 80% hydrogen and 19% helium. A trace
+                amount of methane is also present. Prominent absorption bands of
+                methane exist at wavelengths above 600 nm, in the red and
+                infrared portion of the spectrum.
+              </p>
+              <span
+                >Source:
+                <a href="https://en.wikipedia.org/wiki/Neptune">Wikipedia</a>
+              </span>
+            </div>
+          </div>
+          <div class="desktop-overview-section">
+            <button class="overview-btn-desktop">
+              <span>01 </span>Overview
+            </button>
+            <button class="structure-btn-desktop">
+              <span>02 </span>Internal Structure
+            </button>
+            <button class="geology-btn-desktop">
+              <span>03 </span>Surface Geology
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="stats">
+        <ul>
+          <li>Rotation Time <span>16.08 Hours</span></li>
+          <li>Revolution Time <span>164.79 Years</span></li>
+          <li>Radius <span>24,622 KM</span></li>
+          <li>Average Temp. <span>-201°c</span></li>
+        </ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>

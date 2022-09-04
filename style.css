@@ -67,7 +67,7 @@ select {
   }
 }
 body {
-  background-image: url(/starter-code/assets/background-stars.svg);
+  background-image: url(/assets/background-stars.svg);
   background-color: #070724;
 }
 
@@ -198,26 +198,36 @@ body.active {
   padding-inline: 1.5rem;
   justify-content: center;
   border-bottom: 1px solid #979797;
-}
-.mobile-overview-section ul {
   margin: 0;
   display: flex;
   list-style: none;
   color: #979797;
   gap: 4rem;
   padding: 0;
-  text-transform: uppercase;
   font-weight: 700;
   font-size: 9px;
   line-height: 10px;
   letter-spacing: 2px;
 }
-.mobile-overview-section ul li {
+.mobile-overview-section button {
   padding-block: 1.5rem;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  color: #979797;
+  text-transform: uppercase;
 }
-.mobile-overview-section ul li:hover {
+.mobile-overview-section button.overview-active,
+.mobile-overview-section button.structure-active,
+.mobile-overview-section button.geology-active {
   color: white;
   border-bottom: 4px solid #419ebb;
+}
+.mobile-overview-section button.overview-inactive,
+.mobile-overview-section button.structure-inactive,
+.mobile-overview-section button.geology-inactive {
+  color: #979797;
+  border-bottom: 0;
 }
 
 .planet {
@@ -272,9 +282,23 @@ body.active {
 .planet-text-wrapper .surface-geology {
   display: none;
 }
-.planet-text-wrapper .internal-structure.active,
-.planet-text-wrapper .surface-geology.active {
+.planet-text-wrapper .internal-structure.structure-active {
   display: block;
+}
+.planet-text-wrapper .surface-geology.geology-active {
+  display: block;
+}
+.planet-text-wrapper .overview.overview-active {
+  display: block;
+}
+.planet-text-wrapper .internal-structure.structure-inactive {
+  display: none;
+}
+.planet-text-wrapper .surface-geology.geology-inactive {
+  display: none;
+}
+.planet-text-wrapper .overview.overview-inactive {
+  display: none;
 }
 
 .stats {
@@ -364,8 +388,6 @@ body.active {
   }
   .desktop-overview-section {
     display: flex;
-  }
-  .desktop-overview-section ul {
     padding: 0;
     list-style: none;
     color: white;
@@ -378,7 +400,7 @@ body.active {
     line-height: 25px;
     letter-spacing: 2px;
   }
-  .desktop-overview-section ul li {
+  .desktop-overview-section button {
     display: flex;
     align-items: center;
     border: 1px solid white;
@@ -387,12 +409,12 @@ body.active {
     padding-inline: 1.5rem;
     gap: 1rem;
     font-weight: bold;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
   }
-  .desktop-overview-section ul li span {
+  .desktop-overview-section button span {
     color: #979797;
-  }
-  .desktop-overview-section ul li:active {
-    background-color: #419ebb;
   }
   .planet-text-wrapper {
     margin-inline: 1.5rem;

@@ -1,63 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Planets fact site</title>
-</head>
-<body>
-  Mars
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  <!-- Overview Content Start -->
-
-  Mars is the fourth planet from the Sun and the second-smallest planet 
-  in the Solar System, being larger than only Mercury. In English, Mars 
-  carries the name of the Roman god of war and is often referred to as 
-  the "Red Planet".
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars -->
-
-  <!-- Overview Content End -->
-
-  <!-- Internal Structure Content Start -->
-
-  Like Earth, Mars has differentiated into a dense metallic core overlaid 
-  by less dense materials. Scientists initially determined that the core 
-  is at least partially liquid. Current models of its interior imply a 
-  core consisting primarily of iron and nickel with about 16–17% sulfur.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars#Internal_structure -->
-
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  Mars is a terrestrial planet whose surface consists of minerals containing 
-  silicon and oxygen, metals, and other elements that typically make up rock. 
-  The surface is primarily composed of tholeiitic basalt, although parts are 
-  more silica-rich than typical basalt.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mars#Surface_geology -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  1.03 Days
-
-  Revolution Time
-  1.88 Years
-
-  Radius
-  3,389.5 KM
-
-  Average Temp.
-  -28°c
-</body>
+    <title>Frontend Mentor | Planets fact site</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <span>The planets</span>
+        <div class="nav-desktop">
+          <ul>
+            <li>Mercury</li>
+            <li>Venus</li>
+            <li>Earth</li>
+            <li>Mars</li>
+            <li>Jupiter</li>
+            <li>Saturn</li>
+            <li>Uranus</li>
+            <li>Neptune</li>
+          </ul>
+        </div>
+        <button class="burger-btn">
+          <div class="burger-bars"></div>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <div class="nav-mobile">
+        <ul>
+          <li>
+            <a href="/index.html"
+              ><span class="dot" style="background-color: #def4fc"></span>
+              <span>Mercury</span>
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/venus.html">
+              <span class="dot" style="background-color: #f7cc7f"></span>
+              Venus
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/earth.html"
+              ><span class="dot" style="background-color: #545bfe"></span>
+              Earth
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/mars.html"
+              ><span class="dot" style="background-color: #ff6a45"></span>
+              Mars
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/jupiter.html"
+              ><span class="dot" style="background-color: #ecad7a"></span>
+              Jupiter
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/saturn.html"
+              ><span class="dot" style="background-color: #fccb6b"></span>
+              Saturn
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/uranus.html">
+              <span class="dot" style="background-color: #65f0d5"></span>
+              Uranus
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/neptune.html"
+              ><span class="dot" style="background-color: #497efa"></span>
+              Neptune
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-overview-section">
+        <button class="overview-btn"><a>Overview</a></button>
+        <button class="structure-btn"><a>Structure</a></button>
+        <button class="geology-btn"><a>Geology</a></button>
+      </div>
+      <div class="container-wrapper">
+        <div class="planet">
+          <img src="/assets/planet-mercury.svg" alt="" />
+        </div>
+        <div class="planet-text-wrapper">
+          <div class="planet-text">
+            <div class="overview" id="overview">
+              <h1>Mars</h1>
+              <p>
+                Mars is the fourth planet from the Sun and the second-smallest
+                planet in the Solar System, being larger than only Mercury. In
+                English, Mars carries the name of the Roman god of war and is
+                often referred to as the "Red Planet".
+              </p>
+              <span
+                >Source:
+                <a href="https://en.wikipedia.org/wiki/Mars">Wikipedia</a>
+              </span>
+            </div>
+            <div class="internal-structure">
+              <h1>Mars</h1>
+              <p>
+                Like Earth, Mars has differentiated into a dense metallic core
+                overlaid by less dense materials. Scientists initially
+                determined that the core is at least partially liquid. Current
+                models of its interior imply a core consisting primarily of iron
+                and nickel with about 16–17% sulfur.
+              </p>
+              <span
+                >Source:
+                <a href="https://en.wikipedia.org/wiki/Mars">Wikipedia</a>
+              </span>
+            </div>
+            <div class="surface-geology">
+              <h1>Mars</h1>
+              <p>
+                Mars is a terrestrial planet whose surface consists of minerals
+                containing silicon and oxygen, metals, and other elements that
+                typically make up rock. The surface is primarily composed of
+                tholeiitic basalt, although parts are more silica-rich than
+                typical basalt.
+              </p>
+              <span
+                >Source:
+                <a href="https://en.wikipedia.org/wiki/Mars">Wikipedia</a>
+              </span>
+            </div>
+          </div>
+          <div class="desktop-overview-section">
+            <button class="overview-btn-desktop">
+              <span>01 </span>Overview
+            </button>
+            <button class="structure-btn-desktop">
+              <span>02 </span>Internal Structure
+            </button>
+            <button class="geology-btn-desktop">
+              <span>03 </span>Surface Geology
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="stats">
+        <ul>
+          <li>Rotation Time <span> 1.03 Days</span></li>
+          <li>Revolution Time <span>1.88 Years</span></li>
+          <li>Radius <span>3,389.5 KM</span></li>
+          <li>Average Temp. <span>-28°c</span></li>
+        </ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,62 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Planets fact site</title>
-</head>
-<body>
-  Jupiter
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  <!-- Overview Content Start -->
-
-  Jupiter is the fifth planet from the Sun and the largest in the Solar System. 
-  It is a gas giant with a mass two and a half times that of all the other 
-  planets in the Solar System combined, but less than one-thousandth the mass 
-  of the Sun.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Jupiter -->
-
-  <!-- Overview Content End -->
-
-  <!-- Internal Structure Content Start -->
-
-  When the Juno arrived in 2016, it found that Jupiter has a very diffuse core 
-  that mixes into its mantle. A possible cause is an impact from a planet of 
-  about ten Earth masses a few million years after Jupiter's formation, which 
-  would have disrupted an originally solid Jovian core.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Jupiter#Internal_structure -->
-
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  The best known feature of Jupiter is the Great Red Spot, a persistent 
-  anticyclonic storm located 22° south of the equator. It is known to have 
-  existed since at least 1831, and possibly since 1665.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Jupiter#Great_Red_Spot_and_other_vortices -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  9.93 Hours
-
-  Revolution Time
-  11.86 Years
-
-  Radius
-  69,911 KM
-
-  Average Temp.
-  -108°c
-</body>
+    <title>Frontend Mentor | Planets fact site</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <span>The planets</span>
+        <div class="nav-desktop">
+          <ul>
+            <li>Mercury</li>
+            <li>Venus</li>
+            <li>Earth</li>
+            <li>Mars</li>
+            <li>Jupiter</li>
+            <li>Saturn</li>
+            <li>Uranus</li>
+            <li>Neptune</li>
+          </ul>
+        </div>
+        <button class="burger-btn">
+          <div class="burger-bars"></div>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <div class="nav-mobile">
+        <ul>
+          <li>
+            <a href="/index.html"
+              ><span class="dot" style="background-color: #def4fc"></span>
+              <span>Mercury</span>
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/venus.html">
+              <span class="dot" style="background-color: #f7cc7f"></span>
+              Venus
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/earth.html"
+              ><span class="dot" style="background-color: #545bfe"></span>
+              Earth
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/mars.html"
+              ><span class="dot" style="background-color: #ff6a45"></span>
+              Mars
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/jupiter.html"
+              ><span class="dot" style="background-color: #ecad7a"></span>
+              Jupiter
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/saturn.html"
+              ><span class="dot" style="background-color: #fccb6b"></span>
+              Saturn
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/uranus.html">
+              <span class="dot" style="background-color: #65f0d5"></span>
+              Uranus
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/neptune.html"
+              ><span class="dot" style="background-color: #497efa"></span>
+              Neptune
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-overview-section">
+        <button class="overview-btn"><a>Overview</a></button>
+        <button class="structure-btn"><a>Structure</a></button>
+        <button class="geology-btn"><a>Geology</a></button>
+      </div>
+      <div class="container-wrapper">
+        <div class="planet">
+          <img src="/assets/planet-mercury.svg" alt="" />
+        </div>
+        <div class="planet-text-wrapper">
+          <div class="planet-text">
+            <div class="overview" id="overview">
+              <h1>Jupiter</h1>
+              <p>
+                Jupiter is the fifth planet from the Sun and the largest in the
+                Solar System. It is a gas giant with a mass two and a half times
+                that of all the other planets in the Solar System combined, but
+                less than one-thousandth the mass of the Sun
+              </p>
+              <span
+                >Source:
+                <a href="https://en.wikipedia.org/wiki/Jupiter">Wikipedia</a>
+              </span>
+            </div>
+            <div class="internal-structure">
+              <h1>Jupiter</h1>
+              <p>
+                When the Juno arrived in 2016, it found that Jupiter has a very
+                diffuse core that mixes into its mantle. A possible cause is an
+                impact from a planet of about ten Earth masses a few million
+                years after Jupiter's formation, which would have disrupted an
+                originally solid Jovian core.
+              </p>
+              <span
+                >Source:
+                <a href="https://en.wikipedia.org/wiki/Jupiter">Wikipedia</a>
+              </span>
+            </div>
+            <div class="surface-geology">
+              <h1>Jupiter</h1>
+              <p>
+                The best known feature of Jupiter is the Great Red Spot, a
+                persistent anticyclonic storm located 22° south of the equator.
+                It is known to have existed since at least 1831, and possibly
+                since 1665.
+              </p>
+              <span
+                >Source:
+                <a href="https://en.wikipedia.org/wiki/Jupiter">Wikipedia</a>
+              </span>
+            </div>
+          </div>
+          <div class="desktop-overview-section">
+            <button class="overview-btn-desktop">
+              <span>01 </span>Overview
+            </button>
+            <button class="structure-btn-desktop">
+              <span>02 </span>Internal Structure
+            </button>
+            <button class="geology-btn-desktop">
+              <span>03 </span>Surface Geology
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="stats">
+        <ul>
+          <li>Rotation Time <span>9.93 Hours</span></li>
+          <li>Revolution Time <span>11.86 Years</span></li>
+          <li>Radius <span>69,911 KM</span></li>
+          <li>Average Temp. <span>-108°c</span></li>
+        </ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>

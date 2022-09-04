@@ -1,63 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Planets fact site</title>
-</head>
-<body>
-  Earth
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  <!-- Overview Content Start -->
-
-  Third planet from the Sun and the only known planet to harbor life. 
-  About 29.2% of Earth's surface is land with remaining 70.8% is 
-  covered with water. Earth's distance from the Sun, physical properties 
-  and geological history have allowed life to evolve and thrive.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth -->
-
-  <!-- Overview Content End -->
-
-  <!-- Internal Structure Content Start -->
-
-  Earth's interior, like that of the other terrestrial planets, is divided 
-  into layers by their chemical or physical (rheological) properties. The 
-  outer layer is a chemically distinct silicate solid crust, which is 
-  underlain by a highly viscous solid mantle.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth#Internal_structure -->
-
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  The total surface area of Earth is about 510 million km2. The continental 
-  crust consists of lower density material such as the igneous rocks granite 
-  and andesite. Less common is basalt, a denser volcanic rock that is the 
-  primary constituent of the ocean floors.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Earth#Surface -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  0.99 Days
-
-  Revolution Time
-  365.26 Days
-
-  Radius
-  6,371 KM
-
-  Average Temp.
-  16°c
-</body>
+    <title>Frontend Mentor | Planets fact site</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <span>The planets</span>
+        <div class="nav-desktop">
+          <ul>
+            <li>Mercury</li>
+            <li>Venus</li>
+            <li>Earth</li>
+            <li>Mars</li>
+            <li>Jupiter</li>
+            <li>Saturn</li>
+            <li>Uranus</li>
+            <li>Neptune</li>
+          </ul>
+        </div>
+        <button class="burger-btn">
+          <div class="burger-bars"></div>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <div class="nav-mobile">
+        <ul>
+          <li>
+            <a href="/index.html"
+              ><span class="dot" style="background-color: #def4fc"></span>
+              <span>Mercury</span>
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/venus.html">
+              <span class="dot" style="background-color: #f7cc7f"></span>
+              Venus
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/earth.html"
+              ><span class="dot" style="background-color: #545bfe"></span>
+              Earth
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/mars.html"
+              ><span class="dot" style="background-color: #ff6a45"></span>
+              Mars
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/jupiter.html"
+              ><span class="dot" style="background-color: #ecad7a"></span>
+              Jupiter
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/saturn.html"
+              ><span class="dot" style="background-color: #fccb6b"></span>
+              Saturn
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/uranus.html">
+              <span class="dot" style="background-color: #65f0d5"></span>
+              Uranus
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+          <li>
+            <a href="/neptune.html"
+              ><span class="dot" style="background-color: #497efa"></span>
+              Neptune
+              <span
+                ><svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
+                  <path
+                    fill="none"
+                    stroke="#FFF"
+                    opacity=".4"
+                    d="M1 0l4 4-4 4"
+                  /></svg></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="mobile-overview-section">
+        <button class="overview-btn"><a>Overview</a></button>
+        <button class="structure-btn"><a>Structure</a></button>
+        <button class="geology-btn"><a>Geology</a></button>
+      </div>
+      <div class="container-wrapper">
+        <div class="planet">
+          <img src="/assets/planet-mercury.svg" alt="" />
+        </div>
+        <div class="planet-text-wrapper">
+          <div class="planet-text">
+            <div class="overview" id="overview">
+              <h1>Earth</h1>
+              <p>
+                Third planet from the Sun and the only known planet to harbor
+                life. About 29.2% of Earth's surface is land with remaining
+                70.8% is covered with water. Earth's distance from the Sun,
+                physical properties and geological history have allowed life to
+                evolve and thrive.
+              </p>
+              <span
+                >Source:
+                <a href="https://en.wikipedia.org/wiki/Earth ">Wikipedia</a>
+              </span>
+            </div>
+            <div class="internal-structure">
+              <h1>Earth</h1>
+              <p>
+                Earth's interior, like that of the other terrestrial planets, is
+                divided into layers by their chemical or physical (rheological)
+                properties. The outer layer is a chemically distinct silicate
+                solid crust, which is underlain by a highly viscous solid
+                mantle.
+              </p>
+              <span
+                >Source:
+                <a href="https://en.wikipedia.org/wiki/Earth ">Wikipedia</a>
+              </span>
+            </div>
+            <div class="surface-geology">
+              <h1>Earth</h1>
+              <p>
+                The total surface area of Earth is about 510 million km2. The
+                continental crust consists of lower density material such as the
+                igneous rocks granite and andesite. Less common is basalt, a
+                denser volcanic rock that is the primary constituent of the
+                ocean floors.
+              </p>
+              <span
+                >Source:
+                <a href="https://en.wikipedia.org/wiki/Earth ">Wikipedia</a>
+              </span>
+            </div>
+          </div>
+          <div class="desktop-overview-section">
+            <button class="overview-btn-desktop">
+              <span>01 </span>Overview
+            </button>
+            <button class="structure-btn-desktop">
+              <span>02 </span>Internal Structure
+            </button>
+            <button class="geology-btn-desktop">
+              <span>03 </span>Surface Geology
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="stats">
+        <ul>
+          <li>Rotation Time <span>0.99 Days</span></li>
+          <li>Revolution Time <span>365.26 Days</span></li>
+          <li>Radius <span>6,371 KM</span></li>
+          <li>Average Temp. <span>16°c</span></li>
+        </ul>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
