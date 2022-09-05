@@ -239,9 +239,6 @@ body.active {
   justify-content: center;
   margin: 5rem auto;
 }
-.planet-container .planet {
-  display: block;
-}
 .planet-container .planet-internal {
   display: none;
 }
