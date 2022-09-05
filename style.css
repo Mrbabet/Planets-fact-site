@@ -230,7 +230,7 @@ body.active {
   border-bottom: 0;
 }
 
-.planet {
+.planet-container {
   background-repeat: no-repeat;
   background-position: center;
   width: 111px;
@@ -238,6 +238,15 @@ body.active {
   align-items: center;
   justify-content: center;
   margin: 5rem auto;
+}
+.planet-container .planet {
+  display: block;
+}
+.planet-container .planet-internal {
+  display: none;
+}
+.planet-container .planet-geology {
+  display: none;
 }
 
 .planet-text-wrapper {
@@ -389,7 +398,7 @@ body.active {
   .nav-desktop ul li:hover {
     color: white;
   }
-  .planet {
+  .planet-container {
     width: 184px;
     margin: 5rem auto;
   }
@@ -527,7 +536,7 @@ body.active {
     justify-content: center;
     border-bottom: 0;
   }
-  .planet {
+  .planet-container {
     width: 290px;
   }
   .container-wrapper {
