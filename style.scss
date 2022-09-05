@@ -369,10 +369,17 @@ body.active {
 
       li {
         padding-block: 1.5rem;
+        a {
+          padding-block: 1rem;
+          text-decoration: none;
+          color: #979797;
+        }
+        a:hover {
+          border-bottom: 4px solid #419ebb;
+        }
       }
       li:hover {
         color: white;
-        border-bottom: 4px solid #419ebb;
       }
     }
   }

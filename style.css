@@ -378,9 +378,16 @@ body.active {
   .nav-desktop ul li {
     padding-block: 1.5rem;
   }
+  .nav-desktop ul li a {
+    padding-block: 1rem;
+    text-decoration: none;
+    color: #979797;
+  }
+  .nav-desktop ul li a:hover {
+    border-bottom: 4px solid #419ebb;
+  }
   .nav-desktop ul li:hover {
     color: white;
-    border-bottom: 4px solid #419ebb;
   }
   .planet {
     width: 184px;
