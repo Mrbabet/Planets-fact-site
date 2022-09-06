@@ -282,25 +282,6 @@ body.active {
   .surface-geology {
     display: none;
   }
-
-  .internal-structure.structure-active {
-    display: block;
-  }
-  .surface-geology.geology-active {
-    display: block;
-  }
-  .overview.overview-active {
-    display: block;
-  }
-  .internal-structure.structure-inactive {
-    display: none;
-  }
-  .surface-geology.geology-inactive {
-    display: none;
-  }
-  .overview.overview-inactive {
-    display: none;
-  }
 }
 .stats {
   margin-inline: 1.5rem;
@@ -544,7 +525,7 @@ body.active {
         width: 350px;
         text-align: left;
         .overview,
-        .internal-source,
+        .internal-structure,
         .surface-geology {
           color: white;
           text-align: left;

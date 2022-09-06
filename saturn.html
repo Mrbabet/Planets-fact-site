@@ -153,9 +153,9 @@
         </ul>
       </div>
       <div class="mobile-overview-section">
-        <button class="overview-btn"><a>Overview</a></button>
-        <button class="structure-btn"><a>Structure</a></button>
-        <button class="geology-btn"><a>Geology</a></button>
+        <button class="overview-btn" id="overview"><a>Overview</a></button>
+        <button class="structure-btn" id="structure"><a>Structure</a></button>
+        <button class="geology-btn" id="geology"><a>Geology</a></button>
       </div>
       <div class="container-wrapper">
         <div class="planet-container">
@@ -169,7 +169,7 @@
         </div>
         <div class="planet-text-wrapper">
           <div class="planet-text">
-            <div class="overview" id="overview">
+            <div class="overview" id="div1" style="display: block">
               <h1>Saturn</h1>
               <p>
                 Saturn is the sixth planet from the Sun and the second-largest
@@ -182,7 +182,7 @@
                 <a href="https://en.wikipedia.org/wiki/Saturn">Wikipedia</a>
               </span>
             </div>
-            <div class="internal-structure">
+            <div class="internal-structure" id="div2" style="display: none">
               <h1>Saturn</h1>
               <p>
                 Despite consisting mostly of hydrogen and helium, most of
@@ -195,7 +195,7 @@
                 <a href="https://en.wikipedia.org/wiki/Saturn">Wikipedia</a>
               </span>
             </div>
-            <div class="surface-geology">
+            <div class="surface-geology" id="div3" style="display: none">
               <h1>Saturn</h1>
               <p>
                 The outer atmosphere of Saturn contains 96.3% molecular hydrogen
@@ -210,13 +210,13 @@
             </div>
           </div>
           <div class="desktop-overview-section">
-            <button class="overview-btn-desktop">
+            <button class="overview-btn-desktop" id="overview-desktop">
               <span>01 </span>Overview
             </button>
-            <button class="structure-btn-desktop">
+            <button class="structure-btn-desktop" id="structure-desktop">
               <span>02 </span>Internal Structure
             </button>
-            <button class="geology-btn-desktop">
+            <button class="geology-btn-desktop" id="geology-desktop">
               <span>03 </span>Surface Geology
             </button>
           </div>

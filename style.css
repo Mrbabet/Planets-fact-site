@@ -288,24 +288,6 @@ body.active {
 .planet-text-wrapper .surface-geology {
   display: none;
 }
-.planet-text-wrapper .internal-structure.structure-active {
-  display: block;
-}
-.planet-text-wrapper .surface-geology.geology-active {
-  display: block;
-}
-.planet-text-wrapper .overview.overview-active {
-  display: block;
-}
-.planet-text-wrapper .internal-structure.structure-inactive {
-  display: none;
-}
-.planet-text-wrapper .surface-geology.geology-inactive {
-  display: none;
-}
-.planet-text-wrapper .overview.overview-inactive {
-  display: none;
-}
 
 .stats {
   margin-inline: 1.5rem;
@@ -551,13 +533,13 @@ body.active {
     text-align: left;
   }
   .planet-text-wrapper .planet-text .overview,
-.planet-text-wrapper .planet-text .internal-source,
+.planet-text-wrapper .planet-text .internal-structure,
 .planet-text-wrapper .planet-text .surface-geology {
     color: white;
     text-align: left;
   }
   .planet-text-wrapper .planet-text .overview h1,
-.planet-text-wrapper .planet-text .internal-source h1,
+.planet-text-wrapper .planet-text .internal-structure h1,
 .planet-text-wrapper .planet-text .surface-geology h1 {
     font-weight: 400;
     font-size: 80px;
@@ -565,7 +547,7 @@ body.active {
     margin-bottom: 1rem;
   }
   .planet-text-wrapper .planet-text .overview p,
-.planet-text-wrapper .planet-text .internal-source p,
+.planet-text-wrapper .planet-text .internal-structure p,
 .planet-text-wrapper .planet-text .surface-geology p {
     font-weight: 400;
     font-size: 14px;
@@ -573,7 +555,7 @@ body.active {
     margin-bottom: 2rem;
   }
   .planet-text-wrapper .planet-text .overview span,
-.planet-text-wrapper .planet-text .internal-source span,
+.planet-text-wrapper .planet-text .internal-structure span,
 .planet-text-wrapper .planet-text .surface-geology span {
     font-weight: 400;
     font-size: 14px;
@@ -581,7 +563,7 @@ body.active {
     color: #979797;
   }
   .planet-text-wrapper .planet-text .overview span a,
-.planet-text-wrapper .planet-text .internal-source span a,
+.planet-text-wrapper .planet-text .internal-structure span a,
 .planet-text-wrapper .planet-text .surface-geology span a {
     color: #979797;
     font-weight: bold;

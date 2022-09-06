@@ -1,15 +1,6 @@
 const menuBtn = document.querySelector(".burger-bars");
 const hiddenMenu = document.querySelector(".nav-mobile");
 const bodyShade = document.querySelector("body");
-const overviewBtn = document.querySelector(".overview-btn");
-const structureBtn = document.querySelector(".structure-btn");
-const geologyBtn = document.querySelector(".geology-btn");
-const overview = document.querySelector(".overview");
-const structure = document.querySelector(".internal-structure");
-const geology = document.querySelector(".surface-geology");
-const overviewBtnDesktop = document.querySelector(".overview-btn-desktop");
-const structureBtnDesktop = document.querySelector(".structure-btn-desktop");
-const geologyBtnDesktop = document.querySelector(".geology-btn-desktop");
 
 let menuOpen = false;
 menuBtn.addEventListener("click", () => {
@@ -27,31 +18,71 @@ menuBtn.addEventListener("click", function () {
   bodyShade.classList.toggle("active");
 });
 
-// let js = document.querySelectorAll(".mobile-overview-section.overview-btn");
-// js.forEach((item) => {
-//   item.addEventListener("click", () => {
-//     let activeClass = document.querySelector(".active");
-//     activeClass.className = activeClass.className.replace("active", "");
-//     item.className += "active";
-//   });
-// });
+const overview = document.getElementById("div1");
+const overviewBtn = document.getElementById("overview");
+overviewBtn.onclick = function () {
+  if (overview.style.display !== "none") {
+    overview.style.display = "block";
+  } else {
+    overview.style.display = "block";
+    structure.style.display = "none";
+    geology.style.display = "none";
+  }
+};
+const structure = document.getElementById("div2");
+const structureBtn = document.getElementById("structure");
+structureBtn.onclick = function () {
+  if (structure.style.display !== "none") {
+    structure.style.display = "none";
+  } else {
+    structure.style.display = "block";
+    geology.style.display = "none";
+    overview.style.display = "none";
+  }
+};
 
-overviewBtn.addEventListener("click", function () {
-  overview.classList.remove("overview-inactive");
-  structure.classList.remove("structure-active");
-  structure.classList.remove("structure-inactive");
-  geology.classList.remove("geology-active");
-  geology.classList.remove("geology-inactive");
-});
-structureBtn.addEventListener("click", function () {
-  structure.classList.toggle("structure-active");
-  overview.classList.toggle("overview-inactive");
-  geology.classList.toggle("geology-inactive");
-  geology.classList.remove("geology-active");
-});
-geologyBtn.addEventListener("click", function () {
-  geology.classList.toggle("geology-active");
-  geology.classList.remove("geology-inactive");
-  structure.classList.remove("structure-active");
-  overview.classList.remove("overview-active");
-});
+const geology = document.getElementById("div3");
+const geologyBtn = document.getElementById("geology");
+geologyBtn.onclick = function () {
+  if (geology.style.display !== "none") {
+    geology.style.display = "none";
+  } else {
+    geology.style.display = "block";
+    overview.style.display = "none";
+    structure.style.display = "none";
+  }
+};
+const overviewDesktop = document.getElementById("div1");
+const overviewBtnDesktop = document.getElementById("overview-desktop");
+overviewBtnDesktop.onclick = function () {
+  if (overviewDesktop.style.display !== "none") {
+    overviewDesktop.style.display = "block";
+  } else {
+    overviewDesktop.style.display = "block";
+    structureDesktop.style.display = "none";
+    geologyDesktop.style.display = "none";
+  }
+};
+const structureDesktop = document.getElementById("div2");
+const structureBtnDesktop = document.getElementById("structure-desktop");
+structureBtnDesktop.onclick = function () {
+  if (structureDesktop.style.display !== "none") {
+    structureDesktop.style.display = "none";
+  } else {
+    structureDesktop.style.display = "block";
+    geologyDesktop.style.display = "none";
+    overviewDesktop.style.display = "none";
+  }
+};
+
+const geologyDesktop = document.getElementById("div3");
+const geologyBtnDesktop = document.getElementById("geology-desktop");
+geologyBtnDesktop.onclick = function () {
+  if (geologyDesktop.style.display !== "none") {
+    geologyDesktop.style.display = "none";
+  } else {
+    geologyDesktop.style.display = "block";
+    overviewDesktop.style.display = "none";
+    structureDesktop.style.display = "none";
+  }
+};
