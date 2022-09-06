@@ -407,6 +407,7 @@ body.active {
     background-color: transparent;
     color: white;
     text-transform: uppercase;
+    cursor: pointer;
   }
   .desktop-overview-section button span {
     color: #979797;

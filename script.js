@@ -20,13 +20,17 @@ menuBtn.addEventListener("click", function () {
 
 const overview = document.getElementById("div1");
 const overviewBtn = document.getElementById("overview");
+const overviewBtnColor = document.querySelector(".mercury-btn-color");
+
 overviewBtn.onclick = function () {
   if (overview.style.display !== "none") {
     overview.style.display = "block";
+    overviewBtnColor.classList("active");
   } else {
     overview.style.display = "block";
     structure.style.display = "none";
     geology.style.display = "none";
+    overviewBtnColor.classList("active");
   }
 };
 const structure = document.getElementById("div2");
@@ -70,6 +74,7 @@ structureBtnDesktop.onclick = function () {
     structureDesktop.style.display = "none";
   } else {
     structureDesktop.style.display = "block";
+
     geologyDesktop.style.display = "none";
     overviewDesktop.style.display = "none";
   }
@@ -77,9 +82,11 @@ structureBtnDesktop.onclick = function () {
 
 const geologyDesktop = document.getElementById("div3");
 const geologyBtnDesktop = document.getElementById("geology-desktop");
+
 geologyBtnDesktop.onclick = function () {
   if (geologyDesktop.style.display !== "none") {
     geologyDesktop.style.display = "none";
+    colorGeology.classList.toggle("inactive");
   } else {
     geologyDesktop.style.display = "block";
     overviewDesktop.style.display = "none";
